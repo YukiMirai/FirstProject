@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Html 5</title>
+</head>
+<body>
+	<header>header</header>
+	<nav>
+		<ul>
+			<li>first</li>
+			<li>second</li>
+			<li>third</li>
+		</ul>
+	</nav>
+	<article>
+		<hgroup>
+			<h1>this is article for html5</h1>
+			<h2>do you know what is html 5</h2>
+		</hgroup>
+		<section>please input your age</section>
+		<input type="number" name="demoNumber" min="1" max="100" step="10"></input>
+		<input type="email" name="email" placeholder="please enter your email address "></input>
+		<p>Please pay you attention!</p>
+		<form oninput="output.value=parseInt(range.value)">
+			<input type="range" min="0" max="100" step="5" name="range" value="0">
+			<output name="output">0</output>
+		</form>
+		<input type="color" name="datedemo"></input>
+	</article>
+	<canvas id="demoCanvas" width="500" height="500">
+	<p>use the brower can approve h5</p>
+	</canvas>
+	<script type="text/javascript">
+		var canvasDom = document.getElementById("demoCanvas");
+		var context = canvasDom.getContext('2d');
+		context.strokeStyle = "red";
+		context.strokeRect(10,10,190,100);
+		context.fillStyle = "bule";
+		context.fillRect(110,110,100,100);
+	</script>
+	<aside>sidebar</aside>
+	<footer>footer</footer>
+</body>
+</html>
